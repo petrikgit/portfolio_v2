@@ -1,0 +1,53 @@
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 150px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "DM Sans", sans-serif;
+}
+
+.hero p {
+  font-size: 25px;
+  color: #fff;
+  line-height: 38px;
+  font-style: normal;
+  font-weight: 200;
+}
+
+.hero .gray{
+    color: #999999;
+}
+
+.hero .gray-dot {
+    display: inline-block;
+    width: 15px; /* Adjust the width to your preference */
+    height: 15px; /* Adjust the height to your preference */
+    line-height: 30px; /* Center the content vertically */
+    text-align: center; /* Center the content horizontally */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #999999;
+    opacity: 0;
+    animation: fade 1.5s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  50% {
+    opacity: 1; /* Reach full opacity */
+  }
+  100% {
+    opacity: 0; /* Fade back to 0 opacity */
+  }
+}

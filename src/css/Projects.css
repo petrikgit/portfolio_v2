@@ -1,0 +1,25 @@
+.projects{
+    height: auto;
+    background-color: #111111;
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+
+.card-container{
+    padding: 20px;
+    height: 400px;
+}
+
+.card-inside{
+    background-color: red;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.image-projects{
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease 0s;
+    object-fit: cover;
+    border-radius: 10px;
+}

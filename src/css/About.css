@@ -1,0 +1,111 @@
+.about{
+    height: auto;
+    width: 100%;
+    background-color: #D9D9D9;
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+
+#about-me h1{
+    color: #111111;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 30px;
+    line-height: 55px;
+}
+
+.fs-id{
+    color: #999999 !important;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#about-me p{
+    color: #999999;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+#about-me .paragraph{
+    color: #111111;
+    font-weight: 300;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+#education{
+    margin-top: 130px;
+}
+
+#education h1{
+    color: #111111;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 30px;
+    line-height: 55px;
+}
+
+#education .paragraph{
+    color: #111111;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    padding-right: 50px;
+}
+
+.skills{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.skills p{
+    padding-top: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#contacts-id{
+    text-align: center;
+}
+
+#contacts-id p{
+    margin-top: 30px;
+}
+
+#contacts-id .icons{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#contacts-id .icons a{
+    color: #111111;
+    transition: .5s;
+    
+}
+
+#contacts-id .icons a:hover{
+    color: #6d6d6d;
+    animation-delay: 0.5;
+}
+
+#contacts-id .icons svg{
+    width: 40px;
+}
+
+#contacts-id img{
+    margin-top: 10%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .2rem solid var(--main-color);
+    filter: saturate(0);
+}
+
+.mail-to:hover{
+    color: #6d6d6d !important;
+    transition: .5s;
+}
