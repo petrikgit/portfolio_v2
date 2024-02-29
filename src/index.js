@@ -14,7 +14,21 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <div className="content">
+      <div id="container">
+        <div className="pre-loader" style={{ zIndex: 1 }}>
+          <div className="loader"></div>
+          <div className="loader-bg"></div>
+        </div>
+        <div className="loader-content">
+          <div className="copy">
+            <p className="ml16">
+              Daniel.<span id="ml16-dev">dev</span>
+            </p>
+          </div>
+        </div>
+        <div className="loader-2"></div>
+      </div>
+      <div className="content" style={{ backgroundColor: "#111111" }}>
         <Hero />
         <About />
         <Projects />
@@ -23,4 +37,15 @@ root.render(
     </Router>
   </React.StrictMode>
 );
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  setTimeout(() => {
+    window.scrollTo(1, 0);
+  }, 0);
+});
+
+import("./js/index.js").then((module) => {
+  module.default();
+});
+
 reportWebVitals();
