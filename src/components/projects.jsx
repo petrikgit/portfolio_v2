@@ -152,8 +152,9 @@ function Projects() {
                         <div style={{backgroundColor: "rgb(20 20 20 / 60%)", backdropFilter: "blur(.25rem)", border: "1px solid transparent", boxShadow: "0.5rem 0.5rem 0.5rem rgba(0,0,0,.35)", borderRadius: "1rem", padding: "5px"}}>
                           <p id="menedelum-p">A dynamic website for gym seamlessly materialized through a no-code platform, providing a compelling online space for members to connect and explore fitness offerings. (In progress)</p>
                         </div>
-                    <a href="https://paradise-piercing.webflow.io/" target="_blank">
+                    {/* <a href="https://paradise-piercing.webflow.io/" target="_blank">
                     <svg style={{color: "rgb(153, 153, 153)", width: "25px"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18,10.82a1,1,0,0,0-1,1V19a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V8A1,1,0,0,1,5,7h7.18a1,1,0,0,0,0-2H5A3,3,0,0,0,2,8V19a3,3,0,0,0,3,3H16a3,3,0,0,0,3-3V11.82A1,1,0,0,0,18,10.82Zm3.92-8.2a1,1,0,0,0-.54-.54A1,1,0,0,0,21,2H15a1,1,0,0,0,0,2h3.59L8.29,14.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L20,5.41V9a1,1,0,0,0,2,0V3A1,1,0,0,0,21.92,2.62Z" fill="#999999"></path></svg></a>
+                     */}
                     </div>
               </div>
                 </div>

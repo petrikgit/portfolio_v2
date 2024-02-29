@@ -15,7 +15,7 @@ body {
   height: 100vh;
 }
 
-.pre-loader{
+.pre-loader {
   position: fixed;
   top: 0;
   width: 100%;
@@ -23,7 +23,7 @@ body {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.loader{
+.loader {
   position: absolute;
   top: 0;
   width: 100%;
@@ -35,7 +35,7 @@ body {
   align-items: center;
 }
 
-.loader-content{
+.loader-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -54,27 +54,27 @@ body {
   padding: 0 1em;
 } */
 
-.copy{
+.copy {
   flex: 6;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 35px;
   line-height: 1;
 }
 
-.ml16{
+.ml16 {
   display: inline-block;
 }
 
-.ml16 .letter{
+.ml16 .letter {
   display: inline-block;
   line-height: 1em;
 }
 
-.ml16 #ml16-dev{
+.ml16 #ml16-dev {
   color: #666666;
 }
 
-.loader-bg{
+.loader-bg {
   position: absolute;
   display: block;
   top: 0;
@@ -84,7 +84,7 @@ body {
   z-index: -1;
 }
 
-.loader-2{
+.loader-2 {
   position: absolute;
   top: 0;
   width: 100%;
@@ -93,4 +93,178 @@ body {
   background-size: cover;
   z-index: -1;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* media */
+
+@media (max-width: 1200px) {
+  
+}
+
+@media (max-width: 991px) {
+  .header {
+    /* margin-top: 10px */
+    padding-top: 15px !important;
+    /* padding: 5rem 5%; */
+    font-size: 22px;
+  }
+
+  .header a {
+    font-size: 22px;
+  }
+  .navbar a {
+    font-size: 22px !important;
+  }
+
+  .hero h1{
+    font-size: 130px !important;
+  }
+  
+  .hero p{
+    font-size: 22px !important;
+  }
+
+  #contacts-id{
+    padding-left: 70px !important;
+  }
+
+  #contacts-id img{
+    margin-top: 150px !important;
+  }
+
+  #education p{
+    font-size: 20px;
+  }
+  #education h3{
+    font-size: 25px;
+  }
+
+  .portfolio-title h4 {
+    font-size: 20px !important;
+  }
+
+  .portfolio-title p {
+    font-size: 13px !important;
+  }
+
+  .porftolio-layer a{
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .footer p{
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-color: #111111 !important;
+  }
+
+  html{
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  #contacts-id img{
+    margin-top: 40px !important;
+  }
+
+  .paragraph{
+    padding: 0 20px 0 20px !important;
+    margin-top: 30px  !important;
+    margin-bottom: 40px  !important;
+    text-align: center !important;
+  }
+
+  .hero p{
+    padding: 0 20px 0 20px !important;
+  }
+
+  .portfolio-title p{
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .header {
+    background-color: #111111 !important;
+  }
+
+  .navbar{
+    display: none !important;
+  }
+
+  html{
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  #about-me p{
+    font-size: 18px !important;
+  }
+
+
+
+  #contacts-id{
+    padding: 0 !important;
+  }
+
+  #contacts-id img{
+    margin-top: 40px !important;
+  }
+
+  #education{
+    margin-top: 50px !important;
+  }
+  
+  #education h1{
+    font-size: 35px !important;
+  }
+
+  .paragraph{
+    padding: 0 20px 0 20px !important;
+    margin-top: 30px  !important;
+    margin-bottom: 40px  !important;
+    text-align: center !important;
+    font-size: 18px !important;
+  }
+
+  #skills p{
+    padding: 0 15px 0 15px !important;
+  }
+
+  .hero h1{
+    font-size: 85px !important;
+    
+  }
+  
+  .fs-id{
+    font-size: 25px !important;
+  }
+
+  #about-me h1{
+    font-size: 35px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .hero p{
+    padding: 0 20px 0 20px !important;
+    font-size: 18px !important;
+  }
+
+  .portfolio-title p{
+    font-size: 13px !important;
+  }
+
+  #projects{
+    padding-bottom: 20px !important;
+  }
+
+  .footer p{
+    font-size: 15px !important;
+  }
 }

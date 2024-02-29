@@ -38,10 +38,10 @@ export default function () {
   let lastCharacters = textWrapper.textContent.slice(7, 10);
 
   textWrapper.innerHTML =
-    firstSevenCharacters.replace(/\S/g, "<span className='letter'>$&</span>") +
+    firstSevenCharacters.replace(/\S/g, "<span class='letter'>$&</span>") +
     lastCharacters.replace(
       /\S/g,
-      "<span className='letter' style='color: #666666'>$&</span>"
+      "<span class='letter' style='color: #666666'>$&</span>"
     );
 
   anime
