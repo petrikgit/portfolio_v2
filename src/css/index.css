@@ -109,6 +109,11 @@ body {
     font-size: 22px;
   }
 
+  .hero .gray-dot{
+    width: 13px !important;
+    height: 13px !important;
+  }
+
   .header a {
     font-size: 22px;
   }
@@ -168,6 +173,11 @@ body {
     align-items: center !important;
   }
 
+  .hero .gray-dot{
+    width: 13px !important;
+    height: 13px !important;
+  }
+
   #contacts-id img{
     margin-top: 40px !important;
   }
@@ -207,7 +217,10 @@ body {
     font-size: 18px !important;
   }
 
-
+  .hero .gray-dot{
+    width: 10px !important;
+    height: 10px !important;
+  }
 
   #contacts-id{
     padding: 0 !important;
