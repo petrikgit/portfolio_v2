@@ -1,18 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import '../css/Header.css';
+import React, { useState, useEffect } from "react";
+import "../css/Header.css";
 
 function Header() {
   const [isHeaderSticky, setIsHeaderSticky] = useState(false);
 
   useEffect(() => {
+    let navbar = document.querySelector(".navbar");
+    let menuIcon = document.querySelector("#menu-icon");
+
+    menuIcon.onclick = () => {
+      menuIcon.classList.toggle("bx-x");
+      navbar.classList.toggle("active");
+    };
+  });
+
+  useEffect(() => {
     const handleScroll = () => {
-      const aboutSection = document.getElementById('about');
+      const aboutSection = document.getElementById("about");
       // const projectsSection = document.getElementById('projects');
-      
+
       if (aboutSection) {
         const aboutSectionPosition = aboutSection.getBoundingClientRect().top;
         // const projectsSectionPosition = projectsSection.getBoundingClientRect().top;
-        
+
         if (aboutSectionPosition <= 0) {
           setIsHeaderSticky(true); // Change color when header reaches about section
         } else {
@@ -21,21 +31,30 @@ function Header() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <header className={`header ${isHeaderSticky ? 'sticky' : ''}`} style={{display: "none" }}>
-    {/* // <header className={`header ${isHeaderSticky ? 'sticky' : ''}`} > */}
+    <header
+      className={`header ${isHeaderSticky ? "sticky" : ""}`}
+      style={{ display: "none" }}
+    >
+      {/* // <header className={`header ${isHeaderSticky ? 'sticky' : ''}`} > */}
       <a id="logo-id-reload" href="https://petrikd.com/" className="logo">
         <span id="logo-id-reload-1">Daniel</span>
         <span id="dev-id">.dev</span>
       </a>
-      <div className="bx bx-menu" id="menu-icon"></div>
+      <div className="bx bx-menu" id="menu-icon">
+        <svg viewBox="0 0 100 80" width="25" height="25">
+          <rect width="100" height="20" rx="10"></rect>
+          <rect y="30" width="100" height="20" rx="10"></rect>
+          <rect y="60" width="100" height="20" rx="10"></rect>
+        </svg>
+      </div>
       <nav className="navbar">
         <a id="about-a" href="#about">
           About
