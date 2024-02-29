@@ -29,8 +29,8 @@ function Header() {
   }, []);
 
   return (
-    // <header className={`header ${isHeaderSticky ? 'sticky' : ''}`} style={{display: "none" }}>
-    <header className={`header ${isHeaderSticky ? 'sticky' : ''}`} >
+    <header className={`header ${isHeaderSticky ? 'sticky' : ''}`} style={{display: "none" }}>
+    {/* // <header className={`header ${isHeaderSticky ? 'sticky' : ''}`} > */}
       <a id="logo-id-reload" href="https://petrikd.com/" className="logo">
         <span id="logo-id-reload-1">Daniel</span>
         <span id="dev-id">.dev</span>

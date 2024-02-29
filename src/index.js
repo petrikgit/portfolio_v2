@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      {/* <div id="container">
+      <div id="container">
         <div className="pre-loader" style={{ zIndex: 1 }}>
           <div className="loader"></div>
           <div className="loader-bg"></div>
@@ -27,7 +27,7 @@ root.render(
           </div>
         </div>
         <div className="loader-2"></div>
-      </div> */}
+      </div>
       <div className="content" style={{ backgroundColor: "#111111" }}>
         <Hero />
         <About />
@@ -38,14 +38,14 @@ root.render(
   </React.StrictMode>
 );
 
-// document.addEventListener("DOMContentLoaded", function (event) {
-//   setTimeout(() => {
-//     window.scrollTo(1, 0);
-//   }, 0);
-// });
+document.addEventListener("DOMContentLoaded", function (event) {
+  setTimeout(() => {
+    window.scrollTo(1, 0);
+  }, 0);
+});
 
-// import("./js/index.js").then((module) => {
-//   module.default();
-// });
+import("./js/index.js").then((module) => {
+  module.default();
+});
 
 reportWebVitals();
