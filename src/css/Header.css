@@ -3,13 +3,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1rem 9%;
     background-color: transparent;
     justify-content: space-between;
     z-index: 9999;
     display: flex;
     align-items: center;
-    
+    transition: .5s;
     color: #fff;
 }
 
@@ -130,10 +130,7 @@
     background: transparent;
 }
 
-.header.sticky .navbar a {
-    color: black;
-}
-
-.header.sticky #logo-id-reload-1{
-    color: black;
+.header.sticky{
+    background-color: #111111;
+    transition: .5s;
 }

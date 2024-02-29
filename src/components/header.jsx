@@ -7,13 +7,13 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const aboutSection = document.getElementById('about');
-      const projectsSection = document.getElementById('projects');
+      // const projectsSection = document.getElementById('projects');
       
-      if (aboutSection && projectsSection) {
+      if (aboutSection) {
         const aboutSectionPosition = aboutSection.getBoundingClientRect().top;
-        const projectsSectionPosition = projectsSection.getBoundingClientRect().top;
+        // const projectsSectionPosition = projectsSection.getBoundingClientRect().top;
         
-        if (aboutSectionPosition <= 50 && projectsSectionPosition > 50) {
+        if (aboutSectionPosition <= 0) {
           setIsHeaderSticky(true); // Change color when header reaches about section
         } else {
           setIsHeaderSticky(false); // Return to normal color when header reaches projects section

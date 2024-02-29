@@ -1,12 +1,47 @@
 import "../css/About.css";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Avatar from "../img/portrait.jpeg";
 
 function About() {
+
+  const [isVisible, setIsVisible] = useState(false);
+  const [isVisibleEducation, setIsVisibleEducation] = useState(false);
+  const [isVisibleSkills, setIsVisibleSkills] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const aboutMeOffset = document.getElementById('about-me').offsetTop;
+
+      if (scrollTop > aboutMeOffset - windowHeight + 100) {
+        setIsVisible(true);
+      }
+
+      const educationOffset = document.getElementById('education').offsetTop;
+
+      if (scrollTop > educationOffset - windowHeight + 100) {
+        setIsVisibleEducation(true);
+      }
+
+      const skillsOffset = document.getElementById('skills').offsetTop;
+
+      if (scrollTop > skillsOffset - windowHeight + 100) {
+        setIsVisibleSkills(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="about" id="about">
       <div className="container">
-        <div className="row" id="about-me">
+        <div className={`row ${isVisible ? 'visible' : ''}`} id="about-me">
           <div className="col-md-7">
             <h1>
               Daniel Petrik<br></br>
@@ -77,7 +112,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="row" id="education">
+        <div className={`row ${isVisibleEducation ? 'visible' : ''}`} id="education">
           <h1>Education & Experience</h1>
           <div className="row">
             <div className="col-md-6">
@@ -182,7 +217,7 @@ function About() {
         >
           <hr style={{ width: "60px", color: "#111111" }}></hr>
         </div>
-        <div className="skills">
+        <div className={`skills ${isVisibleSkills ? 'visible' : ''}`} id="skills">
           <p>
             HTML & CSS • Bootstrap • Javascript • React.js • Node.js • MongoDB •
             SQL • Python • Django • Webflow • Xano • C#{" "}
