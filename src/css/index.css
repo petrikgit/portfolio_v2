@@ -98,6 +98,7 @@ body {
 /* media */
 
 @media (max-width: 1200px) {
+
 }
 
 @media (max-width: 991px) {
@@ -159,6 +160,7 @@ body {
   .footer p {
     font-size: 18px !important;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -166,8 +168,8 @@ body {
     background-color: #111111 !important;
   }
 
-  #menu-icon {
-    display: block !important;
+  .blur-card{
+    backdrop-filter: none !important;
   }
 
   html {
@@ -184,7 +186,6 @@ body {
   #contacts-id img {
     margin-top: 40px !important;
   }
-
   .paragraph {
     padding: 0 20px 0 20px !important;
     margin-top: 30px !important;
@@ -201,7 +202,23 @@ body {
   }
 
   .navbar {
-    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    padding: 1rem 4%;
+    background: #252525;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: 0.25s ease;
+    transition-delay: 0.25s;
+    z-index: 1;
+    display: flow !important;
+  }
+
+  .navbar.active {
+    left: 0;
+    transition-delay: 0s;
+    display: flow !important;
   }
 
   .navbar .active-nav {
@@ -211,7 +228,7 @@ body {
     width: 100%;
     height: 100%;
     background: #1c1c1c;
-    border-top: 1rem solid rgba(0, 0, 0, 0.2);
+    /* border-top: 1rem solid rgba(0, 0, 0, 0.2); */
     z-index: -1;
     transition: 0.25s ease;
     transition-delay: 0s;
@@ -222,11 +239,39 @@ body {
     transition-delay: 0.25s;
   }
 
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    transform: translateX(-20rem);
+    transition: 0.25s ease;
+    transition-delay: 0s;
+  }
+
   .navbar.active a {
     transform: translateX(0);
-    transition: .25s ease;
-    display: block !important;
-}
+    transition: 0.25s ease;
+    margin-left: 50%;
+  }
+
+  
+  .education-section,
+  .work-section {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .education-section {
+    width: 100% !important;
+  }
+
+  .faculty-section {
+    order: 2 !important; /* Change the order of Faculty section */
+  }
+
+  .work-section-1 {
+    order: 3 !important;
+  }
 }
 
 @media (max-width: 520px) {
@@ -235,7 +280,54 @@ body {
   }
 
   .navbar {
-    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    padding: 1rem 4%;
+    background: #252525;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: 0.25s ease;
+    transition-delay: 0.25s;
+    z-index: 1;
+    display: inline-table;
+  }
+
+  .navbar.active {
+    left: 0;
+    transition-delay: 0s;
+  }
+
+  .navbar .active-nav {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1c;
+    /* border-top: 1rem solid rgba(0, 0, 0, 0.2); */
+    z-index: -1;
+    transition: 0.25s ease;
+    transition-delay: 0s;
+  }
+
+  .navbar.active .active-nav {
+    left: 0;
+    transition-delay: 0.25s;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    transform: translateX(-20rem);
+    transition: 0.25s ease;
+    transition-delay: 0s;
+  }
+
+  .navbar.active a {
+    transform: translateX(0);
+    transition: 0.25s ease;
   }
 
   html {

@@ -56,6 +56,15 @@
     transition: .5s ease;
 }
 
+.blur-card{
+    background-color: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(0.25rem);
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0.5rem 0.5rem 0.5rem;
+    border-radius: 1rem;
+    padding: 5px;
+}
+
 .portfolio-title{
     background-color: #252525d1;
     padding: 2.5rem;

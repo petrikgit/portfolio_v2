@@ -24,8 +24,8 @@ export default function () {
     setTimeout(() => {
       document.querySelectorAll("body")[0].style.overflow = "";
       document.querySelector(".header").style.display = "";
-      document.querySelector("#container").style.position = "absolute"
-      document.querySelector("#container").style.zIndex = "-1"
+      document.querySelector("#container").style.position = "absolute";
+      document.querySelector("#container").style.zIndex = "-1";
     }, 5000);
   }
 
@@ -122,4 +122,43 @@ export default function () {
     delay: 4.5,
     stagger: 0.25,
   });
+}
+
+let menuIcon = document.querySelector("#menu-icon");
+let xIcon = document.querySelector("#x-icon");
+let navbar = document.querySelector(".navbar");
+
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle("bx-x");
+  navbar.classList.toggle("active");
+  menuIcon.style.display = "none";
+  xIcon.style.display = "block";
+};
+
+xIcon.onclick = () => {
+  menuIcon.classList.toggle("bx-x");
+  navbar.classList.toggle("active");
+  menuIcon.style.display = "block";
+  xIcon.style.display = "none";
+};
+
+const aboutLink = document.getElementById("about-a");
+const projectsLink = document.getElementById("projects-a");
+
+
+aboutLink.addEventListener("click", () => {
+
+  navbar.classList.remove("active");
+});
+
+
+projectsLink.addEventListener("click", () => {
+
+  navbar.classList.remove("active");
+});
+
+window.onscroll = () => {
+  navbar.classList.remove("active");
+  menuIcon.style.display = "block";
+  xIcon.style.display = "none";
 }

@@ -114,8 +114,8 @@ function About() {
         </div>
         <div className={`row ${isVisibleEducation ? 'visible' : ''}`} id="education">
           <h1>Education & Experience</h1>
-          <div className="row">
-            <div className="col-md-6">
+          
+            <div className="col-md-6 education-section" style={{order: 1}}>
               <p style={{ color: "#999999", fontWeight: 300, marginBottom: 9 }}>
                 2017 - 2018
               </p>
@@ -140,7 +140,7 @@ function About() {
                 creation of relevant documentation.
               </p>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 work-section-1" style={{order: 2}}>
               <p style={{ color: "#999999", fontWeight: 300, marginBottom: 9 }}>
                 09.2022 - 03.2023
               </p>
@@ -160,9 +160,9 @@ function About() {
                 instructions
               </p>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-md-6">
+          
+          
+            <div className="col-md-6 faculty-section" style={{order: 3}}>
               <p style={{ color: "#999999", fontWeight: 300, marginBottom: 9 }}>
                 2019 - 2023
               </p>
@@ -183,7 +183,7 @@ function About() {
                 processing, and data visualization in the natural sciences.
               </p>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 work-section" style={{order: 4}}>
               <p style={{ color: "#999999", fontWeight: 300, marginBottom: 9 }}>
                 05.2023 - present
               </p>
@@ -205,7 +205,7 @@ function About() {
                 specifications and documentation
               </p>
             </div>
-          </div>
+          
         </div>
         <div
           style={{

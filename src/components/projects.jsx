@@ -25,7 +25,7 @@ function Projects() {
                     <div className="portfolio-title">
                         <h4 id="menedelum-h4">Mendeleum</h4>
                         <h4 id="menedelum-h4-2" style={{fontSize: "1.3rem", marginBottom: "15px", marginTop: "10px"}}>(Game Development)</h4>
-                        <div style={{backgroundColor: "rgb(20 20 20 / 60%)", backdropFilter: "blur(.25rem)", border: "1px solid transparent", boxShadow: "0.5rem 0.5rem 0.5rem rgba(0,0,0,.35)", borderRadius: "1rem", padding: "5px"}}>
+                        <div class="blur-card">
                         <p id="menedelum-p">"Mendeleum - Little Rescuer" is a single-player game featuring a top-down view. This educational game aims to help players create basic chemical elements and revisit various chemical elements.</p>
                         <p id="menedelum-p-2">(Unity, C#)</p>
                         </div>
@@ -61,7 +61,7 @@ function Projects() {
                     <div className="portfolio-title">
                         <h4 id="menedelum-h4">Daniel.dev 0.1</h4>
                         <h4 id="menedelum-h4-2" style={{fontSize: "1.3rem", marginBottom: "15px", marginTop: "10px", }}>(Web Development)</h4>
-                        <div style={{backgroundColor: "rgb(20 20 20 / 60%)", backdropFilter: "blur(.25rem)", border: "1px solid transparent", boxShadow: "0.5rem 0.5rem 0.5rem rgba(0,0,0,.35)", borderRadius: "1rem", padding: "5px"}}>
+                        <div class="blur-card">
                           <p id="menedelum-p">The old portfolio website, displaying my work for inspiration. Explore my project for ideas and motivation.</p>
                           <p id="menedelum-p-2">(PHP, JavaScript)</p>
                         </div>
@@ -86,7 +86,7 @@ function Projects() {
                     <div className="portfolio-title">
                         <h4 id="menedelum-h4">Divert</h4>
                         <h4 id="menedelum-h4-2" style={{fontSize: "1.3rem", marginBottom: "15px", marginTop: "10px"}}>(Web Application)</h4>
-                        <div style={{backgroundColor: "rgb(20 20 20 / 60%)", backdropFilter: "blur(.25rem)", border: "1px solid transparent", boxShadow: "0.5rem 0.5rem 0.5rem rgba(0,0,0,.35)", borderRadius: "1rem", padding: "5px"}}>
+                        <div class="blur-card">
                         <p id="menedelum-p">The application aims to simplify project management for beginners and starting teams by providing a user-friendly platform with features like Gantt charts, while avoiding the complexity and cost associated with existing solutions such as Asana, Slack, and Trello.</p>
                         <p id="menedelum-p-2">(React.js, Node.js, MongoDB)</p>
                         </div>
@@ -124,7 +124,7 @@ function Projects() {
                   <div className="porftolio-layer">
                     <div className="portfolio-title">
                         <h4 id="menedelum-h4">Paradise Studio</h4>
-                        <div style={{backgroundColor: "rgb(20 20 20 / 60%)", backdropFilter: "blur(.25rem)", border: "1px solid transparent", boxShadow: "0.5rem 0.5rem 0.5rem rgba(0,0,0,.35)", borderRadius: "1rem", padding: "5px"}}>
+                        <div class="blur-card">
                           <p id="menedelum-p">A captivating website for a piercing studio effortlessly came to life using a no-code platform, offering an enticing digital space for clients to explore services and portfolios while easily accessing contact details.</p>
                         </div>
                     <a href="https://paradise-piercing.webflow.io/" target="_blank">
@@ -149,7 +149,7 @@ function Projects() {
                   <div className="porftolio-layer">
                     <div className="portfolio-title">
                         <h4 id="menedelum-h4">Vitality Vault</h4>
-                        <div style={{backgroundColor: "rgb(20 20 20 / 60%)", backdropFilter: "blur(.25rem)", border: "1px solid transparent", boxShadow: "0.5rem 0.5rem 0.5rem rgba(0,0,0,.35)", borderRadius: "1rem", padding: "5px"}}>
+                        <div class="blur-card">
                           <p id="menedelum-p">A dynamic website for gym seamlessly materialized through a no-code platform, providing a compelling online space for members to connect and explore fitness offerings. (In progress)</p>
                         </div>
                     {/* <a href="https://paradise-piercing.webflow.io/" target="_blank">
@@ -175,7 +175,7 @@ function Projects() {
                     <div className="portfolio-title">
                         <h4 id="menedelum-h4">Covid 1.0</h4>
                         <h4 id="menedelum-h4-2" style={{fontSize: "1.3rem", marginBottom: "15px", marginTop: "10px"}}>(Game Development)</h4>
-                        <div style={{backgroundColor: "rgb(20 20 20 / 60%)", backdropFilter: "blur(.25rem)", border: "1px solid transparent", boxShadow: "0.5rem 0.5rem 0.5rem rgba(0,0,0,.35)", borderRadius: "1rem", padding: "5px"}}>
+                        <div class="blur-card">
                         <p id="menedelum-p">"COVID 1.0" is a 2D open-world video game made with the Godot game engine. Players act as doctors in a vast natural setting, aiming to vaccinate as many coronavirus-infected humans as possible before time expires.</p>
                         <p id="menedelum-p-2">(Godot)</p>
                         </div>
@@ -210,7 +210,7 @@ function Projects() {
                     <div className="portfolio-title">
                         <h4 id="menedelum-h4">Music Switch</h4>
                         <h4 id="menedelum-h4-2" style={{fontSize: "1.3rem", marginBottom: "15px", marginTop: "10px"}}>(Web Application)</h4>
-                        <div style={{backgroundColor: "rgb(20 20 20 / 60%)", backdropFilter: "blur(.25rem)", border: "1px solid transparent", boxShadow: "0.5rem 0.5rem 0.5rem rgba(0,0,0,.35)", borderRadius: "1rem", padding: "5px"}}>
+                        <div class="blur-card">
                         <p id="menedelum-p">This user-friendly e-commerce site, built with Java, sells musical instruments and gear, showcasing innovative solutions in online retail.</p>
                         <p id="menedelum-p-2">(Java Web, MySQL)</p>
                         </div>
